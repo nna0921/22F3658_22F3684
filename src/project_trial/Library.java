@@ -1,4 +1,7 @@
+package project_trial;
+
 import java.util.ArrayList;
+
 import java.util.List;
 
 public class Library {
@@ -16,4 +19,18 @@ public class Library {
 	public void listBooks() {
 	  System.out.println("Books in library: " + books);
 	} 
+	
+	 public void removeBook(String bookName) {
+	       if (books.remove(bookName)) {
+	           System.out.println(bookName + " removed from library.");
+	       } else {
+	           System.out.println(bookName + " not found in library.");
+	       }
+	   }
+	 
+	 public void printdata()
+	 {
+		 System.out.println("hello");
+	 }
+
 }
